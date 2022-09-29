@@ -19,7 +19,7 @@ l'autre pc = 192.168.0.2/26
 ```
 
 * ***Pour changer d'adresse ip:***
-* 
+
 Dans cette commande, nous définissons la carte souhaitée, puis l'adresse statique, puis le masque de réseau et enfin la passerelle
 
 ```
