@@ -141,17 +141,17 @@ Addresses:  2a00:1450:4007:80e::200e
 
 j'ai trouvé 5 types de trames lors de l'échange DHCP :
 
-.DHCP Release
-.DHCP Discover
-.DHCP Offer
-.DHCP Request
-.DHCP ACK
+- DHCP Release
+- DHCP Discover
+- DHCP Offer
+- DHCP Request
+- DHCP ACK
 
 ## **IV. Avant-goût TCP et UDP**
 
 **A/** Wireshark it
 Lorsque j'utilise Wireshark pour lire des vidéos YouTube,
-Adresse 77.136.192.86 trouvée sur le port 443 pour le protocole UDP.
-Pour le protocole TCP, recherchez l'adresse 74.125.4.234 sur le port 443.
+Adresse ```77.136.192.86``` trouvée sur le port ```443``` pour le protocole UDP.
+Pour le protocole TCP, recherchez l'adresse ```74.125.4.234``` sur le port ```443```.
 
  [udp-tcp-tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/udp-tcp-tp2.pcapng)
