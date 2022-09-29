@@ -47,8 +47,7 @@ Durée approximative des boucles en millisecondes :
     Minimum = 1ms, Maximum = 3ms, Moyenne = 1ms
 ```
 
-* fichier wireshark
-
+[ping_tp_2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/ping_tp_2.pcapng) 
 
 ## **II. ARP my bro**
 
