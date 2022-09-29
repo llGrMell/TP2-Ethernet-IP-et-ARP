@@ -80,7 +80,7 @@ Carte Ethernet Ethernet :
 Passerelle par défaut. . . . . . . . . : 192.168.0.1
 ...
 ```
-on suprime la table arp: 
+on suprime la table arp avec la commande si dessous: 
 ```
 PS C:\Users\baptb> arp -d
 ```
