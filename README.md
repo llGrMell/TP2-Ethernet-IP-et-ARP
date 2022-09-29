@@ -122,7 +122,12 @@ Interface : 192.168.0.2 --- 0x11
   230.0.0.1             01-00-5e-00-00-01     statique
   239.255.255.250       01-00-5e-7f-ff-fa     statique
 ```
+[arp_tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/arp_tp2.pcapng)
+
 # III. DHCP you too my brooo
+
+mettre le texte
+[dhcp_tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/dhcp_tp2.pcapng)
 
 ## **IV. Avant-goût TCP et UDP**
 
@@ -136,3 +141,6 @@ Réponse ne faisant pas autorité :
 Nom :    youtube.com
 Addresses:  2a00:1450:4007:80e::200e
           216.58.214.174
+          
+ argument
+ [udp-tcp-tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/udp-tcp-tp2.pcapng)
