@@ -126,14 +126,12 @@ Après avoir vidé la table ARP et fait un ping, on émet un protocole ARP en de
 [arp_tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/arp_tp2.pcapng)
 
 nslookup youtube.com
-
-Serveur :   dns.google
-
-Address:  8.8.8.8
+- Serveur :   dns.google
+- Address:  8.8.8.8
 
 Réponse ne faisant pas autorité :
-Nom :    youtube.com
-Addresses:  2a00:1450:4007:80e::200e
+- Nom :    youtube.com
+- Addresses:  2a00:1450:4007:80e::200e
 216.58.214.174
 
 
