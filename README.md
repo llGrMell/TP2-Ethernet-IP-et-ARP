@@ -20,7 +20,7 @@ l'autre pc = 192.168.0.2/26
 
 * ***Pour changer d'adresse ip:***
 
-Dans cette commande, nous définissons la carte souhaitée, puis l'adresse statique, puis le masque de réseau et enfin la passerelle
+Cette commande définit la carte souhaitée, l'adresse statique, le masque de réseau et enfin la passerelle.
 
 ```
 netsh interface ipv4 set address name="Ethernet" static 192.168.0.2 255.255.255.192 192.168.0.1
@@ -31,7 +31,7 @@ netsh interface ipv4 set address name="Ethernet" static 192.168.0.2 255.255.255.
 netsh interface ipv4 set address name="Ethernet" source=dhcp
 ```
 
-Nous pouvons constater que le ping entre les deux machines via ethernet est possible.
+Nous pouvons voir que le ping entre les deux machines via ethernet est possible.
 
 ```
 PS C:\Users\baptb> ping 192.168.0.1
@@ -47,15 +47,13 @@ Statistiques Ping pour 192.168.0.1:
 Durée approximative des boucles en millisecondes :
     Minimum = 1ms, Maximum = 3ms, Moyenne = 1ms
 ```
+les différents types de trames sont des trames ICMPv6 "Multicast Listener Report Message v2", "Neighbor Solicitation..." et "Router Solicitation" ainsi que des trames ICMP "Echo (ping) request"
 
 [ping_tp_2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/ping_tp_2.pcapng) 
 
 ## **II. ARP my bro**
 
-**A/** Check the ARP table
-
-On utilise la commande si dessous pour afficher le table ARP 
-
+On utilise la commande si dessous pour afficher la table ARP 
 
 ```
 arp -a
@@ -87,7 +85,7 @@ on suprime la table arp:
 PS C:\Users\baptb> arp -d
 ```
 
-on regare ce qu'il y a dedans:
+on regarde ce qu'il y a dedans:
 ```
 PS C:\Users\baptb> arp -a
 
@@ -123,17 +121,10 @@ Interface : 192.168.0.2 --- 0x11
   230.0.0.1             01-00-5e-00-00-01     statique
   239.255.255.250       01-00-5e-7f-ff-fa     statique
 ```
+Après avoir vidé la table ARP et fait un ping, on émet un protocole ARP en destination du broadcastjusqu'a trouver d'adresse mac de l'ip du ping.
+
 [arp_tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/arp_tp2.pcapng)
 
-# III. DHCP you too my brooo
-
-mettre le texte
-[dhcp_tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/dhcp_tp2.pcapng)
-
-## **IV. Avant-goût TCP et UDP**
-
-**A/** Wireshark it
-> []
 nslookup youtube.com
 Serveur :   dns.google
 Address:  8.8.8.8
@@ -141,7 +132,26 @@ Address:  8.8.8.8
 Réponse ne faisant pas autorité :
 Nom :    youtube.com
 Addresses:  2a00:1450:4007:80e::200e
-          216.58.214.174
-          
- argument
+216.58.214.174
+
+
+# III. DHCP you too my brooo
+
+[dhcp_tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/dhcp_tp2.pcapng)
+
+j'ai trouvé 5 types de trames lors de l'échange DHCP :
+
+.DHCP Release
+.DHCP Discover
+.DHCP Offer
+.DHCP Request
+.DHCP ACK
+
+## **IV. Avant-goût TCP et UDP**
+
+**A/** Wireshark it
+Lorsque j'utilise Wireshark pour lire des vidéos YouTube,
+Adresse 77.136.192.86 trouvée sur le port 443 pour le protocole UDP.
+Pour le protocole TCP, recherchez l'adresse 74.125.4.234 sur le port 443.
+
  [udp-tcp-tp2.pcapng](https://github.com/llGrMell/TP2-Ethernet-IP-et-ARP/blob/main/udp-tcp-tp2.pcapng)
